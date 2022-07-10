@@ -20,44 +20,43 @@ html {
     height: 40px;
 }
 
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 .input {
     height: 40px;
-    color: rgba(204, 204, 204, 0.4);
+    color: #1C1C1C;
     background: #FFFFFF;
     border: 1px solid rgba(228, 228, 228, 0.6);
     border-radius: 8px;
     padding-left: 16px;
 }
 
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
-#wrapper {
+#main {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-#main {
-    margin: 0 auto;
-    width: 1440px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
 #header {
-    width: 1440px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 75px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(229, 229, 229, 0.25);
     z-index: 1;
+    position: fixed;
+    min-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 #header .header-icon {
@@ -97,16 +96,31 @@ html {
 }
 
 #hero {
+    max-width: 100%;
     height: 683px;
     background-color: #ccc;
-    margin: 75px auto 0 auto;
+    margin-top: 75px;
+    background: url('../img/backGround/hero.png') no-repeat center;
+    background-size: cover;
+}
+
+#hero .hero-bg {
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+}
+
+.intro-wrapper {
+    width: 100%;
+    display: block;
+    position: relative;
 }
 
 #intro {
     position: absolute;
     width: 389px;
-    left: 63%;
-    top: 59%
+    left: 62%;
+    bottom: -342px;
 }
 
 #intro .intro-heading {
@@ -116,9 +130,12 @@ html {
 }
 
 #intro .intro-content {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 21px;
     margin: 24px 0;
+    font-style: normal;
+    font-weight: 400;
+    color: #1C1C1C;
 }
 
 #intro .intro-btn {
@@ -127,12 +144,9 @@ html {
 }
 
 #track {
+    width: 100%;
     align-items: center;
-    position: absolute;
-    /* left: ; */
-    width: 1440px;
     height: 130px;
-    top: 740px;
     background: #FFFFFF;
     box-shadow: 0px 8px 14px rgba(206, 206, 206, 0.2);
     display: flex;
@@ -210,7 +224,8 @@ html {
 
 #section {
     width: 1000px;
-    margin: 130px auto 0 auto;
+    margin: 0 auto;
+    padding-top: 80px;
     height: auto;
 }
 
@@ -220,10 +235,6 @@ html {
     line-height: 22px;
     color: #595959;
     margin: 80px auto 24px auto;
-}
-
-#section .section-img-offer {
-    
 }
 
 #section .section-price-heading {
@@ -275,15 +286,12 @@ html {
 
 .section-show-price {
     display: flex;
-    width: cal(100% - 391px);
     justify-content: space-between;
+    width: 100%;
+    margin-top: 32px;
 }
-
-.section-show-price .show-price-right {
-    width: 21%;
-}
-
-.section-show-price .show-price-left p, .show-price-right p {
+    
+.section-show-price .table tr td {
     font-weight: 700;
     font-size: 10px;
     line-height: 13px;
@@ -292,16 +300,17 @@ html {
     font-family: 'DM Sans';
 }
 
-.section-show-price .show-price-left p {
+.section-show-price .table-price-small tr td:first-child {
     padding: 13px 0 13px 15px;
     width: 402px;
 }
 
-.section-show-price .show-price-right p {
-    padding: 13px 0;
+.section-show-price .table-price-small tr td:last-child {
+    padding: 13px 15px 13px 0;
+
 }
 
-.section-show-price .show-price-left p:first-child, .show-price-right p:first-child {
+.section-show-price .table-price-small tr th {
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
@@ -309,17 +318,26 @@ html {
     margin-top: 20px;
 }
 
-.section-show-price .show-price-left p:nth-child(2n) {
+.section-show-price .table-price-small tr th:first-child {
+    padding: 13px 0 13px 15px;
+}
+
+.section-show-price .table-price-small tr th:last-child {
+    padding: 13px 15px 13px 0;
+}
+
+.section-show-price .table tr:nth-child(2n) td:first-child {
     border-top-left-radius: 24.3218px;
     border-bottom-left-radius: 24.3218px;
     background: rgba(162, 212, 116, 0.1);
 }
 
-.section-show-price .show-price-right p:nth-child(2n) {
+.section-show-price .table tr:nth-child(2n) td:last-child {
     border-top-right-radius: 24.3218px;
     border-bottom-right-radius: 24.3218px;
     background: rgba(162, 212, 116, 0.1);
 }
+
 
 #section .section-connect {
     display: flex;
@@ -329,9 +347,6 @@ html {
     display: flex;
     width: 380px;
     height: 120px;
-}
-
-.section-connect-left .section-connect-img {
 }
 
 .section-connect .connect-transport .transport-number {
@@ -367,6 +382,7 @@ html {
     font-size: 17.3844px;
     line-height: 28px;
     color: rgba(34, 34, 34, 0.75);
+    margin-bottom: 52px;
 }
 
 .section-connect .section-connect-right {
@@ -457,28 +473,26 @@ html {
 
 .section-plan-price {
     display: flex;
-    width: 908px;
-    margin: 48px 46px 218px 46px;
+    margin: 76px 46px 218px 46px;
+    width: 906px;
 }
 
-.section-plan-left {
-    width: 740px;
+.section-plan-price .table tr {
+    width: 100%;
+    text-align: left;
 }
 
-.section-plan-right {
-    width: 168;
+.section-plan-price .table tr th {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.233863px;
+    color: #000000;
 }
 
-.section-plan-left p {
-    padding: 28px;
-}
-
-.section-plan-right p {
-    padding: 28px 100px 28px 0;
-    
-}
-
-.section-plan-right p, .section-plan-left p {
+.section-plan-price .table tr td {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -488,26 +502,25 @@ html {
     color: #000000;
 }
 
-.section-plan-price .section-plan-left p:nth-child(2n) {
+.section-plan-price .table tr td:first-child, .table tr th:first-child {
+    width: 740px;
+    padding: 28px 0 28px 28px;
+}
+
+.section-plan-price .table tr td:last-child, .table tr th:last-child {
+    padding: 28px 28px 28px 0;
+}
+
+.section-plan-price .table tr:nth-child(2n) td:first-child {
     border-top-left-radius: 24.3218px;
     border-bottom-left-radius: 24.3218px;
     background: rgba(162, 212, 116, 0.1);
 }
 
-.section-plan-price .section-plan-right p:nth-child(2n) {
+.section-plan-price .table tr:nth-child(2n) td:last-child {
     border-top-right-radius: 24.3218px;
     border-bottom-right-radius: 24.3218px;
     background: rgba(162, 212, 116, 0.1);
-}
-
-.section-plan-left p:first-child, .section-plan-right p:first-child {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
-    letter-spacing: -0.233863px;
-    color: #000000;
 }
 
 /* Footer  */
@@ -544,7 +557,7 @@ html {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    width: 1326px;
+    min-width: 1326px;
     top: -84px;
     position: absolute;
     left: 50%;
@@ -586,6 +599,11 @@ html {
     border: none;
 }
 
+#footer .footer-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 #footer .footer-btn--active {
     color: #FFFFFF;
     background: #61C702;
@@ -608,18 +626,31 @@ html {
     padding: 152px 73px  73px;
     display: flex;
     justify-content: space-between;
-    width: 1440px;
     margin: 0 auto;
+    width: 100%;
 }
 
-#footer .footer-item .footer-item-info p {
+#footer .footer-item .footer-item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer .footer-item .footer-item-info a {
+    text-decoration: none;
+}
+
+#footer .footer-item .footer-item-info a:hover {
+    text-decoration: underline;
+}
+
+#footer .footer-item .footer-item-info a {
     font-weight: 400;
     font-size: 15.7377px;
     line-height: 18px;
     margin-bottom: 27px;
 }
 
-#footer .footer-item .footer-item-info p:first-child {
+#footer .footer-item .footer-item-info p {
     font-weight: 700;
     color: #172029;
     margin-bottom: 32px;
@@ -636,6 +667,11 @@ html {
     height: 22.48px;
     margin-bottom: 25px;
     display: flex;
+    text-decoration: none;
+}
+
+#footer .item-social-list .item-social-icon:hover {
+    text-decoration: underline;
 }
 
 .item-social-icon p {
