@@ -302,13 +302,13 @@ html {
 
 .section-show-price .table-price-small tr td:first-child {
     padding: 13px 0 13px 15px;
-    width: 402px;
+    width: 380px;
 }
 
-/* .section-show-price .table-price-small tr td:last-child {
+.section-show-price .table-price-small tr td:last-child {
     padding: 13px 15px 13px 0;
 
-} */
+}
 
 .section-show-price .table-price-small tr th {
     font-weight: 600;
@@ -346,7 +346,6 @@ html {
 .section-connect .connect-transport {
     display: flex;
     width: 380px;
-    height: 120px;
 }
 
 .section-connect .connect-transport .transport-number {
@@ -375,6 +374,7 @@ html {
     font-size: 20.8612px;
     line-height: 24px;
     color: #222222;
+    padding-bottom: 14px;
 }
 
 .section-connect .connect-transport .transport-content p:last-child {
@@ -421,13 +421,13 @@ html {
     font-weight: 700;
 }
 
-.section-plan .section-plan-trans--active {
+.section-plan .section-plan-trans:hover {
     background: #5CB30B;
     border-radius: 24.3218px;
     color: #fff;
 }
 
-.section-plan .section-plan-trans--active .plan-trans-btn {
+.section-plan .section-plan-trans:hover  .plan-trans-btn {
     background-color: #fff;
     color: #5CB30B;
 }
@@ -641,6 +641,7 @@ html {
 
 #footer .footer-item .footer-item-info a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 #footer .footer-item .footer-item-info a {
