@@ -305,10 +305,10 @@ html {
     width: 402px;
 }
 
-.section-show-price .table-price-small tr td:last-child {
+/* .section-show-price .table-price-small tr td:last-child {
     padding: 13px 15px 13px 0;
 
-}
+} */
 
 .section-show-price .table-price-small tr th {
     font-weight: 600;
