@@ -387,7 +387,7 @@ html {
 
 .section-connect .section-connect-right {
     margin-left: 17px;
-    margin-top: 277px;
+    margin-top: 244px;
 }
 
 .section-plan {
@@ -424,6 +424,7 @@ html {
 .section-plan .section-plan-trans:hover {
     background: #5CB30B;
     border-radius: 24.3218px;
+    cursor: pointer;
     color: #fff;
 }
 
@@ -651,7 +652,7 @@ html {
     margin-bottom: 27px;
 }
 
-#footer .footer-item .footer-item-info p {
+#footer .footer-item .footer-item-info p:first-child {
     font-weight: 700;
     color: #172029;
     margin-bottom: 32px;
