@@ -277,7 +277,7 @@ html {
     color: #FFFFFF;
     background: #FFC22B;
     border-radius: 4px;
-    width: 107px;
+    width: 112px;
     height: 22px;
     text-align: center;  
     right: 24px;
@@ -306,8 +306,8 @@ html {
 }
 
 .section-show-price .table-price-small tr td:last-child {
+    width: 134px;
     padding: 13px 60px 13px 0;
-
 }
 
 .section-show-price .table-price-small tr th {
