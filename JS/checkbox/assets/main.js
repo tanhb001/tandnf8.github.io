@@ -30,28 +30,28 @@ handler = () => {
       if (checked) {
         selectedItems.push(value)
       } else {
-        selectedItems = selectedItems.filter(item => {
+        selectedItems = selectedItems.filter((item) => {
           return item !== value
         })
       }
-      render()
+      render();
     }
   })
 
-  const checkboxAllElement = document.querySelector('.check-all')
+  const checkboxAllElement = document.querySelector('.check-all');
     checkboxAllElement.onchange = (event) => {
       const checked = event.target.checked
       
       if (checked) {
-        const selectedAllValues = Array.from(checkboxElements).map((item) => {
-          return item.value
-        })
-        selectedItems = selectedAllValues
+      const selectedAllValues = Array.from(checkboxElements).map((item) => {
+          return item.value;
+      })
+      selectedItems = selectedAllValues;
       } else {
-        selectedItems = []
+      selectedItems = [];
       }
 
-      render()
+      render();
     }
 }
 handler();

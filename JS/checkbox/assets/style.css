@@ -10,6 +10,22 @@
     justify-content: center;
   }
 
-  #wrapper {
-    margin: 100px auto;
+  #checkbox {
+    margin-top: 200px;
+    min-width: 300px;
+    background-color: rgb(246, 242, 245);
+  }
+
+  .wrapper {
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .wrapper label {
+    padding-left: 10px;
+  }
+
+  .wrapper input, .wrapper label:hover {
+    cursor: pointer;
+    opacity: 0.7;
   }

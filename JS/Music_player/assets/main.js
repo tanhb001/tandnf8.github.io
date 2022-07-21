@@ -114,7 +114,7 @@ const app = {
             <h3 class="title">${song.name}</h3>
             <p class="author">${song.singer}</p>
           </div>
-          <div class="opition">
+          <div class="option">
             <i class="fas fa-ellipsis-h"></i>
           </div>
         </div>
@@ -183,7 +183,7 @@ const app = {
     //Tiến độ bài hát
     audio.ontimeupdate = function() {
       if(audio.duration) {
-        progress.value = Math.floor(audio.currentTime / audio.duration * 100)
+        progress.value = (audio.currentTime / audio.duration * 100)
       }
     }
 

@@ -92,6 +92,11 @@ header h2 {
   font-size: 18px;
 }
 
+.control .btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 .control .btn.active {
   color: var(--primary-color);
 }
@@ -185,4 +190,9 @@ header h2 {
   padding: 16px 8px;
   color: #999;
   font-size: 18px;
+}
+
+.song .option:hover {
+  cursor: pointer;
+  color: #666;
 }
