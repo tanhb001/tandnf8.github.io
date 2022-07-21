@@ -29,13 +29,13 @@ const app = {
       name: 'Lớn rồi',
       singer: 'DSK',
       path: './assets/music/song1.mp3',
-      image:'./assets/image/img3.jpg'
+      image:'./assets/image/img2.jpg'
     },
     {
       name: 'Điếu thuốc cuối',
       singer: 'DSK',
       path: './assets/music/song2.mp3',
-      image: './assets/image/img2.jpg'
+      image: './assets/image/img4.jpg'
     },
     {
       name: 'Chưa bao giờ',
@@ -47,7 +47,7 @@ const app = {
       name: 'Nắng',
       singer: 'DSK',
       path: './assets/music/song4.mp3',
-      image: './assets/image/img4.jpg'
+      image: './assets/image/img3.jpg'
     },
     {
       name: 'Mưa',
@@ -59,43 +59,43 @@ const app = {
       name: 'Hậu trường',
       singer: 'DSK',
       path: './assets/music/song6.mp3',
-      image: './assets/image/img1.jpg'
+      image: './assets/image/img2.jpg'
     },
     {
-      name: 'Hậu trường-1',
-      singer: 'DSK',
-      path: './assets/music/song6.mp3',
-      image: './assets/image/img1.jpg'
+      name: 'Q.L.C',
+      singer: 'Hưng Cao',
+      path: './assets/music/song7.mp3',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr_YnZ5Wsd36DiaZTLspSB9mxqDRbthbTaiw&usqp=CAU'
     },
     {
-      name: 'Hậu trường-2',
-      singer: 'DSK',
-      path: './assets/music/song6.mp3',
-      image: './assets/image/img1.jpg'
+      name: 'Sẽ có nhiều khi',
+      singer: 'Hưng Cao',
+      path: './assets/music/song8.mp3',
+      image: 'https://i1.sndcdn.com/avatars-000409394064-dqhbcd-t500x500.jpg'
     },
     {
-      name: 'Hậu trường-2',
-      singer: 'DSK',
-      path: './assets/music/song6.mp3',
-      image: './assets/image/img1.jpg'
+      name: 'K-part 2',
+      singer: 'Jaytee & LK',
+      path: './assets/music/song9.mp3',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi0yAUmN30oV5s7e0O9Ki6xpZG3uKvImS8Ew&usqp=CAU'
     },
     {
-      name: 'Hậu trường-3',
+      name: 'Lãng mạn của anh',
       singer: 'DSK',
-      path: './assets/music/song6.mp3',
-      image: './assets/image/img1.jpg'
+      path: './assets/music/song10.mp3',
+      image: './assets/image/img3.jpg'
     },
     {
-      name: 'Hậu trường-4',
-      singer: 'DSK',
-      path: './assets/music/song6.mp3',
-      image: './assets/image/img1.jpg'
+      name: 'Không tin 1 sớm mai bình yên',
+      singer: 'Jaytee & LK',
+      path: './assets/music/song11.mp3',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi0yAUmN30oV5s7e0O9Ki6xpZG3uKvImS8Ew&usqp=CAU'
     },
     {
-      name: 'Hậu trường-5',
+      name: 'Thuốc lá',
       singer: 'DSK',
-      path: './assets/music/song6.mp3',
-      image: './assets/image/img1.jpg'
+      path: './assets/music/song12.mp3',
+      image: './assets/image/img2.jpg'
     },
     
   ],
@@ -300,7 +300,7 @@ const app = {
   scrollToActiveSong: function() {
     setTimeout(() => {
       $('.song.active').scrollIntoView({
-        block: 'end',
+        block: 'center',
         behavior: 'smooth'
       })
     }, 300)
