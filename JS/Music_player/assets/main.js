@@ -188,9 +188,13 @@ const app = {
     }
 
     // Xử lý khi tua
-
-    progress.onchange = function(e) {
-      audio.currentTime = audio.duration / 100 * e.target.value
+    progress.oninput = function(e){
+      audio.pause()
+      const seekTime = audio.duration / 100 * e.target.value
+      audio.currentTime = seekTime
+      progress.onchange = function(){
+        audio.play()
+      }
     }
 
     // Khi next
