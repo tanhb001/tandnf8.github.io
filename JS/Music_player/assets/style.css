@@ -133,9 +133,15 @@ header h2 {
   cursor: pointer;
 }
 
+#time {
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-color);
+  min-height: 24px;
+}
 /* PLAYLIST */
 .playlist {
-  margin-top: 408px;
+  margin-top: 425px;
   padding: 12px;
 }
 

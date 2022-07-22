@@ -181,11 +181,26 @@ const app = {
     }
 
     //Tiến độ bài hát
+    convertTimes = function (sec) {
+      const minutes = Math.floor(sec/60)
+      const secs = sec%60
+      if(secs < 10) {
+        return `0${minutes}:0${secs}`
+      } else {
+        return `0${minutes}:${secs}`
+      }
+    }
+    convertTimes()
+    
     audio.ontimeupdate = function() {
       if(audio.duration) {
         progress.value = (audio.currentTime / audio.duration * 100)
+        document.getElementById('time-start').innerHTML = convertTimes((Math.floor(audio.currentTime)))
+        document.getElementById('time-end').innerHTML = convertTimes(Math.floor(audio.duration) - (Math.floor(audio.currentTime)))
       }
     }
+
+    //Thời gian bài hát
 
     // Xử lý khi tua
     progress.oninput = function(e){
