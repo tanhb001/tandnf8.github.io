@@ -3,6 +3,7 @@ const app = {
     timerId: null,
   
     render: () => {
+      const dotElements = document.querySelectorAll('.btn-pagination')
       const imgElements = document.querySelectorAll('.img')
       imgElements.forEach((element, index) => {
         if (index === app.currentActiveIndex) {
@@ -11,6 +12,17 @@ const app = {
           element.classList.remove('show')
         }
       })
+
+      dotElements.forEach((dotElement, dotIndex) => {
+        if(dotIndex === app.currentActiveIndex){
+            dotElement.classList.add('active')
+            console.log(dotElement)
+
+        } else {
+            dotElement.classList.remove('active')
+
+        }
+    })
     },
   
     bindingEventHandler: () => {
@@ -46,6 +58,7 @@ const app = {
           app.render()
           app.refreshInterval()
         }
+        
       })
     },
   
@@ -62,8 +75,8 @@ const app = {
     },
   
     run: () => {
-      app.render();
-      app.bindingEventHandler();
+      app.render()
+      app.bindingEventHandler()
       app.timerId = app.getIntervalId()
     }
 }

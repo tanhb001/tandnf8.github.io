@@ -34,6 +34,10 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  .btn:hover {
+    cursor: pointer;
+  }
   
   .btn-prev {
     left: 10px;
@@ -51,8 +55,17 @@
     transform: translateX(-50%);
   }
 
-  .btn-pagination, .btn-pagination2, .btn-pagination3 {
-    padding: 5px 10px;
+  .btn-pagination {
+    padding: 8px 12px;
+    border: none;
+  }
+
+  .btn-pagination:hover {
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: rgb(252, 122, 150);
   }
 
   
