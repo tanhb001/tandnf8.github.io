@@ -1,49 +1,71 @@
-
-let currentActiveIndex = 0;
-
-let interval = null;
-
-const render =() => {
-    const imgElements = document.querySelectorAll('.img');
-
-    imgElements.forEach((element,index) => {
-        if (index === currentActiveIndex){
-            element.classList.add('show');
+const app = {
+    currentActiveIndex: 0,
+    timerId: null,
+  
+    render: () => {
+      const imgElements = document.querySelectorAll('.img')
+      imgElements.forEach((element, index) => {
+        if (index === app.currentActiveIndex) {
+          element.classList.add('show')
         } else {
-            element.classList.remove('show');
+          element.classList.remove('show')
         }
-    })
-}
-
-render();
-
-const prevButtonElement = document.querySelector('.btn-prev');
-const nextButtonElement = document.querySelector('.btn-next');
-
-prevButtonElement.onclick = () => {
-    currentActiveIndex = currentActiveIndex === 0 ? 2 : currentActiveIndex + 1;
-    render();
-}
-
-nextButtonElement.onclick = () => {
-    currentActiveIndex = currentActiveIndex === 2 ? 0 : currentActiveIndex + 1;
-    render();
-}
-
-const paginationItems = document.querySelectorAll('.btn-pagination');
-
-paginationItems.forEach((item,index) => {
-    item.onclick =() => {
-        currentActiveIndex = index;
-        render();
+      })
+    },
+  
+    bindingEventHandler: () => {
+      // Prev and next button
+      const prevButtonElement = document.querySelector('.btn-prev')
+      const nextButtonElement = document.querySelector('.btn-next')
+  
+      prevButtonElement.onclick = () => {
+        if (app.currentActiveIndex === 0) {
+          app.currentActiveIndex = 2
+        } else {
+          app.currentActiveIndex--
+        }
+        app.render()
+        app.refreshInterval()
+      }
+  
+      nextButtonElement.onclick = () => {
+        if (app.currentActiveIndex === 2) {
+          app.currentActiveIndex = 0
+        } else {
+          app.currentActiveIndex++
+        }
+        app.render()
+        app.refreshInterval()
+      }
+  
+      // Dot navigate
+      const dotElements = document.querySelectorAll('.btn-pagination')
+      dotElements.forEach((element, index) => {
+        element.onclick = () => {
+          app.currentActiveIndex = index
+          app.render()
+          app.refreshInterval()
+        }
+      })
+    },
+  
+    getIntervalId: () => {
+      return setInterval(() => {
+        app.currentActiveIndex = app.currentActiveIndex === 2 ? 0 : app.currentActiveIndex + 1;
+        app.render();
+      }, 3000)
+    },
+  
+    refreshInterval: () => {
+      clearInterval(app.timerId)
+      app.timerId = app.getIntervalId()
+    },
+  
+    run: () => {
+      app.render();
+      app.bindingEventHandler();
+      app.timerId = app.getIntervalId()
     }
-})
-
-
-setInterval(()=>{
-    currentActiveIndex = currentActiveIndex === 2 ? 0 : currentActiveIndex + 1;
-    render();
-}, 3000)
-
-
-
+}
+  
+app.run()
