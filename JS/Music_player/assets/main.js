@@ -138,7 +138,7 @@ const app = {
       {transform: 'rotate(360deg)'}
     ], {
       duration: 15000,
-      interation: Infinity
+      iterations: Infinity
     })
 
     cdThumbAnimate.pause()
