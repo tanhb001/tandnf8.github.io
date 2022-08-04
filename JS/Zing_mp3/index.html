@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="stylesheet" href="./assets/fontawesome-free-6.1.1-web/css/all.css">
+        <link rel="shortcut icon" href="#">
+        <title>Zing mp3</title>
+    </head>
+    <body>
+        <script src="https://kit.fontawesome.com/d1b88f478d.js" crossorigin="anonymous"></script>
+        <div class="app">
+
+            <!-- Navbar  -->
+
+            <div class="navbar">
+                <div class="navbar-logo-wrapper">
+                    <div class="navbar-logo"></div>
+                </div>
+                <div class="navbar-menu">
+                    <div class="menu-list">
+                        <div class="menu-item">
+                            <div class="item-icon">
+                                <i class="fa-solid fa-music"></i>
+                                <span>Cá nhân</span>
+                            </div>
+                            <i class=" play-icon fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-icon">
+                                <i class="fa-solid fa-circle-dot"></i>
+                                <span>Khám phá</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <span>#zingchart</span>
+                            </div>
+                            <i class=" play-icon fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-icon live">
+                                <i class="fa-solid fa-podcast"></i>
+                                <span>Radio</span>
+                            </div>
+                            <i class=" play-icon fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-icon">
+                                <i class="fa-solid fa-newspaper"></i>
+                                <span>Theo dõi</span>
+                            </div>
+                        </div>
+                        <div class="line">
+                        </div>
+                    </div>
+
+                    <div class="scroll-list-wrapper">
+                        <div class="menu-scroll-list">
+    
+                            <div class="menu-item">
+                                <div class="item-icon">
+                                    <i class="fa-solid fa-music"></i>
+                                    <span>Nhạc mới</span>
+                                </div>
+                                <i class=" play-icon fa-solid fa-circle-play"></i>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-icon">
+                                    <i class="fa-solid fa-icons"></i>
+                                    <span>Thể loại</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>Top 100</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-icon">
+                                    <i class="fa-solid fa-film"></i>
+                                    <span>MV</span>
+                                </div>
+                            </div>
+                            <div class="navbar-banner-wrapper">
+                                <div class="navbar-banner">
+                                    <div class="banner-text">
+                                        Nghe nhạc không quảng cáo cùng kho nhạc VIP
+                                    </div>
+                                    <a class="banner-btn" href="">NÂNG CẤP VIP</a>
+                                </div>
+                            </div>
+                            <div class="navbar-library">
+                                <div class="library-item">
+                                    <span>THƯ VIỆN</span>
+                                    <i class="play-icon-edit fa-solid fa-pen"></i>
+                                </div>
+                                <div class="library-item">
+                                    <div class="library-icon">
+                                        <img src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.0.13/static/media/my-song.cf0cb0b4.svg">
+                                        <span>Bài hát</span>
+                                    </div>
+                                    <i class=" play-icon fa-solid fa-circle-play"></i>
+                                </div>
+                                <div class="library-item">
+                                    <div class="library-icon">
+                                        <img src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.0.13/static/media/my-playlist.7e92a5f0.svg">
+                                        <span>Playlist</span>
+                                    </div>
+                                </div>
+                                <div class="library-item">
+                                    <div class="library-icon">
+                                        <img src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.0.13/static/media/my-history.374cb625.svg">
+                                        <span>Gần đây</span>
+                                    </div>
+                                </div>
+                                <div class="library-item">
+                                    <div class="library-icon">
+                                        <img src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.0.13/static/media/my-history.374cb625.svg">
+                                        <span>Gần đây</span>
+                                    </div>
+                                </div>
+                                <div class="library-item">
+                                    <div class="library-icon">
+                                        <img src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.0.13/static/media/my-history.374cb625.svg">
+                                        <span>Gần đây</span>
+                                    </div>
+                                </div>
+                                <div class="library-item">
+                                    <div class="library-icon">
+                                        <span>Playlist #1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-playlist">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Tạo Playlist mới</span>
+                </div>
+            </div>
+
+            <!-- Header  -->
+
+            <div class="header-wrapper">
+                <div class="header">
+                    <div class="header-item">
+                        <div class="header-search-box">
+                            <div class="search-prev-next">
+                                <i class="search-btn fa-solid fa-arrow-left"></i>
+                                <i class="search-btn fa-solid fa-arrow-right"></i>
+                            </div>
+                            <div class="search-input-wrapper">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input class="search-input" type="text" placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát...">
+                                <div class="search-extend">
+                                    <div class="extend-list-wrapper">
+                                        <div class="extend-list-heading">
+                                            Đề xuất cho bạn
+                                        </div>
+                                        <div class="extend-list-item">
+                                            <i class="fa-solid fa-arrow-trend-up"></i>
+                                            <span>ngôi sao</span>
+                                        </div>
+                                        <div class="extend-list-item">
+                                            <i class="fa-solid fa-arrow-trend-up"></i>
+                                            <span>vì mẹ anh</span>
+                                        </div>
+                                        <div class="extend-list-item">
+                                            <i class="fa-solid fa-arrow-trend-up"></i>
+                                            <span>nên em đừng</span>
+                                        </div>
+                                        <div class="extend-list-item">
+                                            <i class="fa-solid fa-arrow-trend-up"></i>
+                                            <span>karaoke</span>
+                                        </div>
+                                        <div class="extend-list-item">
+                                            <i class="fa-solid fa-arrow-trend-up"></i>
+                                            <span>XONE RADIO</span>
+                                        </div>
+                                        <div class="extend-list-item">
+                                            <i class="fa-solid fa-arrow-trend-up"></i>
+                                            <span>podcast</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-option">
+                            <div class="option-item">
+                                <div class="item-icon">
+                                    <i class="fa-solid fa-shirt"></i>
+                                </div>
+                                <div class="item-icon">
+                                    <i class="fa-solid fa-gem"></i>
+                                </div>
+                                <div class="item-icon">
+                                    <i class="fa-solid fa-upload"></i>
+                                </div>
+                                <div class="item-icon">
+                                    <i class="fa-solid fa-gear"></i>
+                                </div>
+                                <img class="item-avt" src="https://s120-ava-talk-zmp3.zmdcdn.me/b/8/0/7/10/120/3df77383979880f27347166331a05bf0.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content  -->
+
+            <div class="content-wrapper">
+                <div class="content-left">
+                    <div class="disc-img">
+                        <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/5/c/3/1/5c319caf14085caeadaca7092b34db9b.jpg" alt="">
+                        <div class="btn-wrapper">
+                            <button class="play-music">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <h3 class="content-left-title">Top 100 Bài Hát Nhạc Trẻ Hay Nhất</h3>
+                    <span>Cập nhật: 27/07/2022</span>
+                    <div class="content-left-artist">
+                        <a href="">Khang Việt, </a>
+                        <a href="">Jack - J5M, </a>
+                        <a href="">Miu Lê, </a>
+                        <a href="">Châu Khải Phong</a>
+                    </div>
+                    <span>1.9M người yêu thích</span><br/>
+                    <button class="play-btn">
+                        <i class="fa-solid fa-play"></i>
+                        <span>PHÁT NGẪU NHIÊN</span>
+                    </button>
+                    <div class="like-icon">
+                        <div class="like-icon-box">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="like-icon-box">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-right">
+                    <div class="description">
+                        <span>Lời tựa </span>Top 100 Nhạc Trẻ là danh sách 100 ca khúc hot nhất hiện tại của thể loại Nhạc Trẻ, được Zing MP3 tự động tổng hợp dựa trên thông tin số liệu lượt nghe và lượt chia sẻ của từng bài hát trên phiên bản web và phiên bản Mobile. Dữ liệu sẽ được lấy trong 30 ngày gần nhất và được cập nhật liên tục.
+                    </div>
+                    <div class="info-tab">
+                        <div class="info-left">
+                            <div class="sort-wrapper">
+                                <i class="fa-solid fa-arrow-down-wide-short"></i>
+                                <span>BÀI HÁT</span>
+                            </div>
+                            <div class="sort-by">
+                                <div class="sort-by-option">Mặc định</div>
+                                <div class="sort-by-option">Tên bài hát (A-Z)</div>
+                                <div class="sort-by-option">Tên ca sĩ (A-Z)</div>
+                                <div class="sort-by-option">Tên Album (A-Z)</div>
+                            </div>
+                        </div>
+                        <div class="info-mid">
+                            <span>ALBUM</span>
+                        </div>
+                        <div class="info-right">
+                            <span>THỜI GIAN</span>
+                        </div>
+                    </div>
+                    <div class="info-song">
+                        <div class="song-left">
+                            <i class="song-left-icon fa-solid fa-music"></i>
+                            <input type="checkbox" class="song-checkbox">
+                            <div class="song-left-play-btn">
+                                <img src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/b/0/c/8/b0c8399ab4bf53e7eb1285ee1e8aaa32.jpg" alt="">
+                                <div class="song-left-btn-wrapper">
+                                    <button class="song-left-play-music">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="song-info">
+                                <div class="song-name">Em nên dừng lại</div>
+                                <a href="" class="song-artist" >Khang Việt</a>
+                            </div>
+                        </div>
+                        <div class="song-mid">
+                            <span>Em nên dừng lại(Single)</span>
+                        </div>
+                        <div class="song-right">
+                            <span>06:08</span>
+                            <div class="song-right-option">
+                                <i class="fa-solid fa-microphone-lines"></i>
+                            </div>
+                            <div class="song-right-option">                                
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="song-right-option">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- More-list -->
+        
+            <div class="more-list">
+                <div class="more-list-artist">
+                    <h3>Nghệ Sĩ Tham Gia</h3>
+                    <div class="artist-wrapper">
+                        <div class="content-left">
+                            <div class="disc-img">
+                                <img src="https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/avatars/7/7/a/f/77af7df3537177703cab72e92350aca6.jpg" alt="">
+                                <div class="btn-wrapper">
+                                    <button class="play-music">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="content-left-artist">
+                                <a href="">Khang Việt</a>
+                            </div>
+                            <span>55K người quan tâm</span><br/>
+                            <button class="play-btn">
+                                <i class="fa-solid fa-user-plus"></i>
+                                <span>QUAN TÂM</span>
+                            </button>
+                        </div>
+                        <div class="content-left">
+                            <div class="disc-img">
+                                <img src="https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/avatars/5/e/5/d/5e5dfdfa44a483ebaf6952fa52a5a60a.jpg" alt="">
+                                <div class="btn-wrapper">
+                                    <button class="play-music">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="content-left-artist">
+                                <a href="">Jack - J5M</a>
+                            </div>
+                            <span>5M người quan tâm</span><br/>
+                            <button class="play-btn">
+                                <i class="fa-solid fa-user-plus"></i>
+                                <span>QUAN TÂM</span>
+                            </button>
+                        </div>
+                        <div class="content-left">
+                            <div class="disc-img">
+                                <img src="https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/avatars/9/c/7/0/9c70cfb7159568d0e995909c8997c8be.jpg" alt="">
+                                <div class="btn-wrapper">
+                                    <button class="play-music">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="content-left-artist">
+                                <a href="">Đạt Long Vinh</a>
+                            </div>
+                            <span>630 người quan tâm</span><br/>
+                            <button class="play-btn">
+                                <i class="fa-solid fa-user-plus"></i>
+                                <span>QUAN TÂM</span>
+                            </button>
+                        </div>
+                        <div class="content-left">
+                            <div class="disc-img">
+                                <img src="https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/avatars/e/2/9/8/e2983a18669da0f3e941f159ce892b04.jpg" alt="">
+                                <div class="btn-wrapper">
+                                    <button class="play-music">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="content-left-artist">
+                                <a href="">Miu Lê</a>
+                            </div>
+                            <span>147K người quan tâm</span><br/>
+                            <button class="play-btn">
+                                <i class="fa-solid fa-user-plus"></i>
+                                <span>QUAN TÂM</span>
+                            </button>
+                            
+                        </div>
+                        <div class="content-left">
+                            <div class="disc-img">
+                                <img src="https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/avatars/5/4/7/5/5475e269864da16707a0b865f81425b6.jpg" alt="">
+                                <div class="btn-wrapper">
+                                    <button class="play-music">
+                                        <i class="fa-solid fa-shuffle"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="content-left-artist">
+                                <a href="">Karik</a>
+                            </div>
+                            <span>492K người quan tâm</span><br/>
+                            <button class="play-btn">
+                                <i class="fa-solid fa-user-plus"></i>
+                                <span>QUAN TÂM</span>
+                            </button>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="more-list">
+                <div class="more-list-artist more-list-care">
+                    <h3>Có thể bạn quan tâm</h3>
+                    <div class="artist-wrapper">
+                        <div class="content-left">
+                            <div class="disc-img disc-img-more-list">
+                                <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/1/7/1/1/171161322ceb3b6bae415f6201c04b42.jpg" alt="">
+                                <div class="btn-wrapper btn-wrapper-more-list">
+                                    <div class="more-list-icon">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <button class="play-music play-music-more-list">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <div class="more-list-icon">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-left-artist">
+                                <a href="">Today's V-Pop Hits</a>
+                                <div class="content-left-artist-more">
+                                    <a href="">Thiều Bảo Trâm, </a>
+                                    <a href="">Trúc Nhân, </a>
+                                    <a href="">Miu Lê...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-left">
+                            <div class="disc-img disc-img-more-list">
+                                <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/4/b/c/d/4bcd13a52cc122558b77827463e06756.jpg" alt="">
+                                <div class="btn-wrapper btn-wrapper-more-list">
+                                    <div class="more-list-icon">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <button class="play-music play-music-more-list">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <div class="more-list-icon">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-left-artist">
+                                <a href="">V-Pop Nhạc Mới Nổi Bật</a>
+                                <div class="content-left-artist-more">
+                                    <a href="">Orange, </a>
+                                    <a href="">Trịnh Thăng Bình, </a>
+                                    <a href="">Phương Ly...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-left">
+                            <div class="disc-img disc-img-more-list">
+                                <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/f/1/d/a/f1dac2e768ec66afcf8d226aab305bcd.jpg" alt="">
+                                <div class="btn-wrapper btn-wrapper-more-list">
+                                    <div class="more-list-icon">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <button class="play-music play-music-more-list">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <div class="more-list-icon">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-left-artist">
+                                <a href="">Top Hits V-pop</a>
+                                <div class="content-left-artist-more">
+                                    <a href="">ERIK, </a>
+                                    <a href="">Trịnh Thăng Bình, </a>
+                                    <a href="">Miu Lê...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-left">
+                            <div class="disc-img disc-img-more-list">
+                                <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/a/1/e/6/a1e60b44c4d57f186f9f2ba80b3f2307.jpg" alt="">
+                                <div class="btn-wrapper btn-wrapper-more-list">
+                                    <div class="more-list-icon">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <button class="play-music play-music-more-list">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <div class="more-list-icon">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-left-artist">
+                                <a href="">Sing Along V-Pop</a>
+                                <div class="content-left-artist-more">
+                                    <a href="">Hoàng Dũng, </a>
+                                    <a href="">Khang Việt, </a>
+                                    <a href="">Đức Phúc...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-left">
+                            <div class="disc-img disc-img-more-list">
+                                <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/7/3/e/8/73e8924f6e17821abb57ce29880bd625.jpg" alt="">
+                                <div class="btn-wrapper btn-wrapper-more-list">
+                                    <div class="more-list-icon">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <button class="play-music play-music-more-list">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <div class="more-list-icon">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-left-artist">
+                                <a href="">Pop Ballad Việt Nổi Bật</a>
+                                <div class="content-left-artist-more">
+                                    <a href="">KARIK, </a>
+                                    <a href="">Trung Quân Idol, </a>
+                                    <a href="">Orange...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Recent list -->
+            <div class="recent-list-wrapper">
+                <div class="recent-list-header">
+                    <div class="recent-list-left">
+                        <span class="">Danh sách phát</span>
+                        <span class="active">Nghe gần đây</span>
+                    </div>
+                    <div class="recent-list-right">
+                        <div class="recent-icon">
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </div>
+                        <div class="recent-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-list-items">
+                    <div class="recent-list-item">
+                        <div class="recent-song">
+                            <div class="recent-song-left">
+                                <div class="recent-song-left-play-btn">
+                                    <img src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/b/0/c/8/b0c8399ab4bf53e7eb1285ee1e8aaa32.jpg" alt="">
+                                    <div class="recent-song-left-btn-wrapper">
+                                        <button class="recent-song-left-play-music">
+                                            <i class="fa-solid fa-play"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="recent-song-info">
+                                    <div class="recent-song-name">Em nên dừng lại</div>
+                                    <a href="" class="recent-song-artist" >Khang Việt</a>
+                                </div>
+                            </div>
+                            <div class="recent-song-right">
+                                <div class="recent-song-right-option">                                
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="recent-song-right-option">                                
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Music Player -->
+            <div class="music-player-wrapper">
+                <div class="player-left">
+                    <div class="player-left-items">
+                        <div class="left-item-img">
+                            <img src="https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/cover/6/c/7/a/6c7a2d3d84ca867bc107460f9afb9d84.jpg" alt="">
+                        </div>
+                        <div class="left-item-info">
+                            <div class="info-name-song">
+                                <span>Tất cả tại anh</span>
+                            </div>
+                            <div class="info-artist">
+                                <a href="">Karik</a>
+                                <a href="">Emma</a>
+                            </div>
+                        </div>
+                        <div class="like-icon">
+                            <div class="like-icon-box">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="like-icon-box">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-mid">
+
+                </div>
+                <div class="player-right">
+
+                </div>
+            </div>
+        </div>
+
+        
+        <script src="./assets/main.js"></script>
+    </body>
+</html>
