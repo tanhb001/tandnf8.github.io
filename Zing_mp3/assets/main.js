@@ -729,16 +729,16 @@ const app = {
     discAroundAnimate: function () {
         const discImg = $('.disc-img')
 
-        // if (app.isPlaying) {
-        //     discImg.classList.add('playing')
-        //     animate.play()
-        // } else {
-        //     animate.cancel()
-        //     animateEnd.play()
-        //     setTimeout(() => {
-        //         discImg.classList.remove('playing')
-        //     }, 700)
-        // }
+        if (app.isPlaying) {
+            discImg.classList.add('playing')
+            animate.play()
+        } else {
+            animate.cancel()
+            animateEnd.play()
+            setTimeout(() => {
+                discImg.classList.remove('playing')
+            }, 700)
+        }
     },
 
     playRandomsong: function () {
