@@ -279,7 +279,7 @@ body::-webkit-scrollbar {
 
 .header {
     position: fixed;
-    left: 239px;
+    left: 240px;
     top: 0;
     right: 0;
     min-width: 640px;
@@ -414,7 +414,7 @@ body::-webkit-scrollbar {
 .content-wrapper {
     padding: 40px 59px 0 59px;
     margin-top: 70px;
-    margin-left: 256px;
+    margin-left: 240px;
     width: calc(100% - 240px);
     /* min-height: calc(100vh - 70px); */
     background-color: #1e1e1e;
