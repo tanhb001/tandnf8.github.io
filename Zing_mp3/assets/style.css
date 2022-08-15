@@ -414,7 +414,7 @@ body::-webkit-scrollbar {
 .content-wrapper {
     padding: 40px 59px 0 59px;
     margin-top: 70px;
-    margin-left: 240px;
+    margin-left: 256px;
     width: calc(100% - 240px);
     /* min-height: calc(100vh - 70px); */
     background-color: #1e1e1e;
@@ -1443,6 +1443,10 @@ input[type='range']::-webkit-slider-runnable-track {
     left: -360px;
     padding: 15px;
     transition: 500ms;
+}
+
+.toast-close-btn {
+    cursor: pointer;
 }
 
 .show {
