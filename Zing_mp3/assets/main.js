@@ -23,7 +23,6 @@ const sortDefaultBtn = $('.sort-default')
 const sortSongsBtn = $('.sort-songs')
 const sortSingersBtn = $('.sort-singers')
 const sortAlbumsBtn = $('.sort-albums')
-
 let selectedItems = []
 
 const discAround = $('.disc-around')
@@ -45,6 +44,7 @@ const app = {
     isRandom: false,
     isMute: false,
     isLike: false,
+    isShow: true,
     volValue: 100,
     songs: [
         {
