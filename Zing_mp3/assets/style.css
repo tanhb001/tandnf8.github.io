@@ -876,7 +876,7 @@ body::-webkit-scrollbar {
 
 .more-list {
     padding: 0 59px;
-    margin-left: 256px;
+    margin-left: 240px;
     width: calc(100% - 240px);
     min-height: 100px;
     background-color: #1e1e1e;
