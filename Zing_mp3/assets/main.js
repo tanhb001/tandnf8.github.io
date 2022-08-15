@@ -606,7 +606,6 @@ const app = {
             sortItems.classList.add('is-hidden')
             app.renderSongList()
             app.bindingEvent()
-            console.log(app.songsDefautList)
         }
 
         sortSongsBtn.onclick = function () {
@@ -622,7 +621,6 @@ const app = {
             sortItems.classList.add('is-hidden')
             app.renderSongList()
             app.bindingEvent()
-            console.log(app.songsDefautList)
         }
 
         sortAlbumsBtn.onclick = function () {

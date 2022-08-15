@@ -413,13 +413,13 @@ body::-webkit-scrollbar {
 
 .content-wrapper {
     padding: 40px 59px 0 59px;
-    margin-top: 70px;
-    margin-left: 256px;
+    position: relative;
+    top: 70px;
+    left: 240px;
     width: calc(100% - 240px);
     /* min-height: calc(100vh - 70px); */
     background-color: #1e1e1e;
     display: flex;
-    position: relative;
 }
 
 .content-left {
